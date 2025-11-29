@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Movivo </title>
+    <link rel="icon" href="./assets/img/logo.png">
+
+    <!-- ! Linking CSS, Bootstrap -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+
+    <!-- ?  Linking font family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    
+    <!-- * Linking font awsome -->
+    <link rel="stylesheet" href="./assets/css/all.min.css">
+</head>
+
+<body>
+    <div class="sidebar position-fixed top-0 start-0 vh-100 px-2 py-3 d-flex flex-column justify-content-between" id="sidebar">
+        <div class="sidebarHeader" id="sidebarHeader">
+            <img src="./assets/img/logo.png" class="logo" id="logo">
+        </div>
+        <div class="menuBtn" id="menuBtn">
+            <i class="fa-solid fa-bars-staggered"></i>
+        </div>
+        <div class="sidebarMenu position-fixed top-0 vh-100 d-flex flex-column justify-content-between" id="sidebarMenu">
+            <div class="sidebarContent">
+                <span class="closeBtn" id="closeBtn"> 
+                    <i class="fa-solid fa-circle-xmark"></i>
+                </span>
+                <ul>
+                    <li class="nowPlaying">Now Playing</li>
+                    <li class="popular">Popular</li>
+                    <li class="topRated">Top Rated</li>
+                    <li class="upcoming">Upcoming</li>
+                    <li class="contactUs" for="#contactUs">
+                        <a href="#contactUs" class="text-decoration-none"> Contact Us </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="sidebarFooter">
+                Created by <span> Gelan Ayman </span>
+            </div>
+        </div>
+    </div>
+    <div class="hero container py-5" id="hero">
+        <input type="text" class="searchInput w-50 rounded-5 d-block mx-auto px-3 py-2 bg-transparent" id="searchInput" placeholder="Search ...">
+        <div class="moviesContainer" id="moviesContainer">
+
+        </div>
+        <div class="contactUs" id="contactUs">
+            <h2 class="text-white"> Contact Us </h2>
+            <form action="">
+                <div class="row mt-3"> 
+                    <div class="col-md-6"> 
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control" id="name" placeholder="Enter your name" aria-label="Username" aria-describedby="basic-addon1">
+                        </div>
+                    </div>
+                    <div class="col-md-6"> 
+                        <div class="input-group mb-3">
+                            <input type="email" class="form-control" id="email" placeholder="Enter your email" aria-label="Username" aria-describedby="basic-addon1">
+                        </div>
+                    </div>
+                    <div class="col-md-6"> 
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control" id="phone" placeholder="Enter your phone" aria-label="Username" aria-describedby="basic-addon1">
+                        </div>
+                    </div>
+                    <div class="col-md-6"> 
+                        <div class="input-group mb-3">
+                            <input type="number" class="form-control" id="age" placeholder="Enter your age" aria-label="Username" aria-describedby="basic-addon1">
+                        </div>
+                    </div>
+                    <div class="col-md-6"> 
+                        <div class="input-group mb-3">
+                            <input type="password" class="form-control" id="password" placeholder="Enter your password" aria-label="Username" aria-describedby="basic-addon1">
+                        </div>
+                    </div>
+                </div>
+                <button type="button" class="btn btn-outline-light" id="submitBtn"> Submit </button>
+            </form>
+            <p id="error"></p>
+            <p id="success"></p>
+        </div>
+    </div>
+    
+    <!-- ! Linking Js file -->
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>
